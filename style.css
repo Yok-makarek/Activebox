@@ -169,6 +169,7 @@
     .works {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 100px;
     }
     
     .works__item {
@@ -219,4 +220,31 @@
     .works__text {
         color: #ffffff;
         font-size: 14px;
+    }
+    /* ==================Contacts========================== */
+    
+    .contacts__item {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 25%;
+    }
+    
+    .contacts__title {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+    }
+    
+    .contacts__position {
+        color: #e84545;
+        padding-bottom: 15px;
+    }
+    
+    .contacts__text {
+        font-size: 14px;
+        line-height: 22px;
+        color: #6c7279;
     }
