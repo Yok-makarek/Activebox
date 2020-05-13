@@ -29,8 +29,9 @@
     
     .container {
         width: 100%;
-        max-width: 1170px;
+        max-width: 1200px;
         margin: 0 auto;
+        padding: 0 15px;
     }
     /* ==================Header========================== */
     
@@ -221,16 +222,31 @@
         color: #ffffff;
         font-size: 14px;
     }
-    /* ==================Contacts========================== */
+    /* ==================Team========================== */
     
-    .contacts__item {
-        box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 25%;
+    .team {
+        margin: 100px 0 70px;
     }
     
-    .contacts__title {
+    .team__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+    }
+    
+    .team__item {
+        width: 25%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+    
+    .team_photo {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .team__name {
         padding-top: 30px;
         padding-bottom: 10px;
         font-size: 22px;
@@ -238,13 +254,48 @@
         font-weight: 400;
     }
     
-    .contacts__position {
+    .team__prof {
         color: #e84545;
-        padding-bottom: 15px;
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
     }
     
-    .contacts__text {
+    .team__text {
         font-size: 14px;
-        line-height: 22px;
+        line-height: 21px;
         color: #6c7279;
+        margin-bottom: 20px;
+    }
+    /* ==================Social========================== */
+    
+    .social {
+        display: flex;
+    }
+    
+    .social__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        margin-right: 4px;
+        background-color: #fff;
+        border: 1px solid #e8ecee;
+        transition: background .2s linear;
+    }
+    
+    .social__icon {
+        display: block;
+        height: 18px;
+        fill: #c6cacc;
+        transition: fill .2s linear;
+    }
+    
+    .social__item:hover {
+        background-color: #e8ecee;
+    }
+    
+    .social__item:hover .social__icon {
+        fill: #e84545;
     }
